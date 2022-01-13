@@ -9,3 +9,13 @@ mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
 server:
   port: 8081
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: r-bp1ywpxgatumxweyo0pd.redis.rds.aliyuncs.com
+    port: 6379
+    password: arron:137123a*
+    client-type: jedis
+
+
