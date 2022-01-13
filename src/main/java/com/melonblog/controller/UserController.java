@@ -4,6 +4,7 @@ package com.melonblog.controller;
 import com.melonblog.common.lang.Result;
 import com.melonblog.entity.User;
 import com.melonblog.service.UserService;
+import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @RequiresAuthentication//告诉登录才能进行访问
     @GetMapping("/index")
     public Result index(){
 
