@@ -10,10 +10,13 @@ mybatis-plus:
 server:
   port: 8081
 
-#shiro-redis:
-#  enabled: true
-#  redis-manager:
-#    host: 127.0.0.1:6379
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
+
+
+
 
 
 melonhub:
